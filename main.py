@@ -25,3 +25,12 @@ def dangerous_command(user_cmd):
  """Execute a command."""
  import os
  os.system("echo " + user_cmd)
+
+def risky_eval(user_input):
+ """Run user-provided code dynamically."""
+ return eval(user_input)
+
+def log_credentials(username, password):
+ """Log user credentials."""
+ print(f"User {username} logged in with password {password}")
+ #retriggered
